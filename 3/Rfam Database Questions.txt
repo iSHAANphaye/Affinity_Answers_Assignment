@@ -1,0 +1,15 @@
+QUESTION: How many types of tigers can be found in the taxonomy table of the dataset?
+QUERY: SELECT COUNT(*) FROM taxonomy WHERE species LIKE '%Panthera tigris%';
+ANS: 8
+
+QUESTION: What is the "ncbi_id" of the Sumatran Tiger?
+QUERY: SELECT ncbi_id FROM taxonomy WHERE species LIKE '%Panthera tigris sumatrae%';
+ANS: 9695
+
+QUESTION: Find all the columns that can be used to connect the tables in the given database.
+QUERY:-
+SELECT CONSTRAINT_NAME, TABLE_NAME, COLUMN_NAME, REFERENCED_TABLE_NAME, REFERENCED_COLUMN_NAME
+FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+WHERE CONSTRAINT_SCHEMA = 'rfam'
+  AND REFERENCED_TABLE_NAME IS NOT NULL
+ORDER BY TABLE_NAME, COLUMN_NAME
