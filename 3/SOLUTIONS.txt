@@ -1,4 +1,4 @@
-Important: Import the database using **"USE Rfam;"** query before running any queries listed below.
+Important: Import the database using "USE Rfam;" query before running any queries listed below.
 
 QUESTION: How many types of tigers can be found in the taxonomy table of the dataset?
 QUERY: SELECT COUNT(*) FROM taxonomy WHERE species LIKE '%Panthera tigris%';
