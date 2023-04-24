@@ -1,3 +1,5 @@
+# Imagine there is a file full of Twitter tweets by various users and you are provided a set of words that indicates racial slurs. Write a program that can indicate the degree of profanity for each sentence in the file. Write in any programming language (preferably in Python) - make any assumptions, but remember to state them.
+
 The python program reads a file of Twitter tweets, and detects the degree of profanity for each sentence using a set of racial slurs. The following assumptions are made:
 1. The tweets are in English or any language which uses the English alphabet
 2. The input file contains one tweet per line.
